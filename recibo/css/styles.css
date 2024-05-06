@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --primary-color-darker: rgb(77, 145, 158);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: var(--primary-color);
+}
+
+main {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 50%;
+  margin: 5px;
+  margin-left: 300px;
+  background: var(--primary-color-darker);
+}
+
+div input {
+  width: 100%;
+  font-size: 16px;
+  height: 30px;
+  padding: 0 20px;
+}
+
+div button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+div p {
+  font-weight: bold;
+}
+
+.dados {
+  padding: 20px;
+}
+
+.print {
+  display: none;
+  margin: 10px;
+  padding: 20px;
+  /* border: 1px solid black;
+    border-radius: 30px; */
+  width: 600px;
+}
+
+.print h1 {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.print h2 {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.assinatura {
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+@media print {
+  .print {
+    display: block;
+  }
+  .dados {
+    display: none;
+  }
+}
